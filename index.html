@@ -2,28 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ReName Ninja - Help & Features</title>
+    <title>ReName Ninja - A Photoshop Plugin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="center-container">
         <div class="content">
+            <!-- Placeholder for plugin logo or screenshot -->
+            <div class="plugin-image-placeholder">
+                <!-- Replace src with your image file when ready -->
+                <img src="topimage.png" alt="ReName Ninja Plugin" class="plugin-header-image">
+            </div>
             <header>
-                <h1>ReName Ninja - Help &amp; Features</h1>
+                <h1>Help &amp; Features</h1>
                 <p>ReName Ninja is a Photoshop panel plugin designed to make renaming and organizing your layers fast, flexible, and frustration-free.</p>
             </header>
             <section>
                 <h2>Main Features</h2>
                 <ol>
                     <li>
-                        <strong>Behavior options</strong>
+                        <strong class="feature-title">Behavior options</strong>
                         <ul>
                             <li>Choose whether to apply changes only to selected layers or to all layers in your document.</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Batch Rename Layers</strong>
+                        <strong class="feature-title">Batch Rename Layers</strong>
                         <ul>
                             <li><strong>Rename Modes:</strong>
                                 <ul>
@@ -36,7 +41,7 @@
                         </ul>
                     </li>
                     <li>
-                        <strong>Find and Replace</strong>
+                        <strong class="feature-title">Find and Replace</strong>
                         <ul>
                             <li><strong>Find:</strong> Enter text to search for in layer names.</li>
                             <li><strong>Replace:</strong> Enter replacement text, or use special modes:
@@ -52,7 +57,7 @@
                         </ul>
                     </li>
                     <li>
-                        <strong>How the Revert Buttons Work</strong>
+                        <strong class="feature-title">How the Revert Buttons Work</strong>
                         <p>
                             ReName Ninja provides two Revert buttons—one for the Rename section and one for the Find and Replace section. However, both buttons perform the same action:<br>
                             They restore all your layer names to what they were before your most recent batch rename or find-and-replace operation.
@@ -66,7 +71,7 @@
                         <h4>Important Notes</h4>
                         <ul>
                             <li><strong>One-Level Undo:</strong> Only the most recent batch operation can be reverted. If you perform multiple operations, only the last one can be undone.</li>
-                            <li><strong>Document-Specific:</strong> The revert memory is tied to the current Photoshop document. Switching documents clears the revert state.</li>
+                            <li><strong>Document-Specific:</strong> The revert memory applies only to the Photoshop document where you last performed a batch operation. You cannot revert changes in a different document.</li>
                             <li><strong>Visibility:</strong> When reverting, only the layer names are restored; other properties like visibility are preserved.</li>
                         </ul>
                     </li>
