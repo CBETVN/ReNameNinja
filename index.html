@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RenameNinja Plugin Help</title>
+    <title>ReName Ninja – Help & Features</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #222; }
@@ -11,50 +11,92 @@
         section { background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 8px #eee; margin-bottom: 2em; }
         code, pre { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
         footer { margin-top: 2em; color: #888; font-size: 0.9em; }
-        ul { margin-left: 1.5em; }
+        ul, ol { margin-left: 1.5em; }
+        h2 { margin-top: 1.5em; }
+        li { margin-bottom: 0.5em; }
     </style>
 </head>
 <body>
     <header>
-        <h1>RenameNinja Plugin Help</h1>
-        <p>Your guide to using the RenameNinja plugin efficiently.</p>
+        <h1>ReName Ninja – Help &amp; Features</h1>
+        <p>ReName Ninja is a Photoshop panel plugin designed to make renaming and organizing your layers fast, flexible, and frustration-free.</p>
     </header>
     <section>
-        <h2>Getting Started</h2>
+        <h2>Main Features</h2>
         <ol>
-            <li>Install the RenameNinja plugin from the official source.</li>
-            <li>Open your project and activate the plugin.</li>
-            <li>Access the plugin via the toolbar or context menu.</li>
+            <li>
+                <strong>Batch Rename Layers</strong>
+                <ul>
+                    <li><strong>Apply to Selected / All:</strong> Choose whether to rename only selected layers or all layers in your document.</li>
+                    <li><strong>Rename Modes:</strong>
+                        <ul>
+                            <li><strong>Prefix:</strong> Add text before the existing layer name.</li>
+                            <li><strong>Name:</strong> Replace the entire layer name.</li>
+                            <li><strong>Suffix:</strong> Add text after the existing layer name.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Enumerate:</strong> Automatically add a two-digit number to each renamed layer for easy ordering.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Find and Replace</strong>
+                <ul>
+                    <li><strong>Find:</strong> Enter text to search for in layer names.</li>
+                    <li><strong>Replace:</strong> Enter replacement text, or use special modes:
+                        <ul>
+                            <li><strong>Delete:</strong> Remove all occurrences of the find text.</li>
+                            <li><strong>Delete All After:</strong> Remove everything after (and including) the find text.</li>
+                            <li><strong>Delete All Before:</strong> Remove everything before (and including) the find text.</li>
+                            <li><strong>Replace With:</strong> Replace found text with your replacement.</li>
+                            <li><strong>Insert Before:</strong> Insert your text before the found text.</li>
+                            <li><strong>Insert After:</strong> Insert your text after the found text.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Apply to Selected / All:</strong> Choose whether to run the operation on selected layers or all layers.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Revert Changes</strong>
+                <ul>
+                    <li><strong>Revert Rename:</strong> Undo your last batch rename and restore original layer names.</li>
+                    <li><strong>Revert Replace:</strong> Undo your last find-and-replace operation.</li>
+                </ul>
+            </li>
         </ol>
     </section>
     <section>
-        <h2>How to Use</h2>
+        <h2>Usage Tips</h2>
         <ul>
-            <li><strong>Batch Rename:</strong> Select files or items, then choose <code>Rename with RenameNinja</code>.</li>
-            <li><strong>Custom Patterns:</strong> Use wildcards or regular expressions for advanced renaming.</li>
-            <li><strong>Preview Changes:</strong> Review the changes before applying them.</li>
+            <li><strong>Input Limits:</strong> Layer names, find, and replace fields are limited to 50 characters for stability.</li>
+            <li><strong>Safety Checks:</strong> The plugin prevents you from deleting a layer’s name entirely.</li>
+            <li><strong>Smart Objects:</strong> Works with all layer types, including Smart Objects.</li>
+            <li><strong>No Selection Warning:</strong> If you try to apply changes to selected layers but none are selected, you’ll get a helpful alert.</li>
+            <li><strong>Non-Latin Characters:</strong> Alerts you if your find text isn’t found, including a reminder to check for non-Latin characters.</li>
         </ul>
     </section>
     <section>
-        <h2>Examples</h2>
-        <pre>
-Pattern: <code>IMG_*</code>
-Result: <code>Vacation_*</code>
-        </pre>
-        <pre>
-Pattern: <code>file(\d+).txt</code>
-Result: <code>document$1.txt</code>
-        </pre>
+        <h2>Troubleshooting</h2>
+        <ul>
+            <li>If you see a message about “no stored names,” perform a rename or replace operation first.</li>
+            <li>If you try to revert more than once, you’ll be notified that there are no more saved revert states.</li>
+            <li>If you exceed input length, you’ll be prompted to shorten your text.</li>
+        </ul>
     </section>
     <section>
-        <h2>FAQ</h2>
+        <h2>Shortcuts &amp; Best Practices</h2>
         <ul>
-            <li><strong>Can I undo a rename?</strong> Yes, use the undo option in the plugin menu.</li>
-            <li><strong>Does it support subfolders?</strong> Yes, enable "Include subfolders" in settings.</li>
+            <li>Use <strong>Enumerate</strong> for quick numbering of layers.</li>
+            <li>Use <strong>Apply to All</strong> for global changes, or <strong>Apply to Selected</strong> for targeted edits.</li>
+            <li>Use <strong>Revert</strong> buttons to quickly undo your last operation if you make a mistake.</li>
         </ul>
+    </section>
+    <section>
+        <h2>Need More Help?</h2>
+        <p>For further assistance or feedback, please contact the plugin author or visit the support page.</p>
+        <p>Happy renaming with ReName Ninja!</p>
     </section>
     <footer>
-        &copy; 2025 RenameNinja Plugin. Need more help? Contact <a href="mailto:support@renameninja.com">support@renameninja.com</a>
+        &copy; 2025 ReName Ninja Plugin. Need more help? Contact <a href="mailto:support@renameninja.com">support@renameninja.com</a>
     </footer>
 </body>
 </html>
