@@ -20,7 +20,9 @@ body {
 .content {
     width: 100%;
     max-width: 700px;
-    margin: 2em 0;
+    margin: 2em auto;           /* Center horizontally */
+    box-sizing: border-box;     /* Include padding/border in width */
+    padding: 0;                 /* Remove side padding if any */
 }
 header { margin-bottom: 2em; text-align: center; }
 h1 { color: #2c3e50; }
@@ -49,13 +51,16 @@ li { margin-bottom: 0.5em; }
     font-weight: bold;
     font-size: 1.1em;
 }
+.plugin-image-placeholder {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 .plugin-header-image {
     width: 100%;
     max-width: 700px;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
+    margin: 0 auto 2em auto;    /* Center image */
     border-radius: 16px;
 }
